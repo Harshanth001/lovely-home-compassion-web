@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Lovely Home custom colors
+				lovely: {
+					peach: '#FDE1D3',
+					green: '#F2FCE2',
+					blue: '#D3E4FD',
+					yellow: '#FEF7CD',
+					pink: '#FFDEE2',
+					purple: '#E5DEFF',
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'gentle-bounce': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'gentle-bounce': 'gentle-bounce 2s infinite ease-in-out'
+			},
+			backgroundImage: {
+				'gradient-soft': 'linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%)',
+				'gradient-warm': 'linear-gradient(to top, #e6b980 0%, #eacda3 100%)',
 			}
 		}
 	},
