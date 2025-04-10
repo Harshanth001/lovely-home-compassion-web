@@ -314,12 +314,14 @@ const TalentPage = () => {
             We believe in celebrating the unique skills and talents of every individual.
             If you know someone with a special talent, please help us add them to our showcase.
           </p>
-          <Button className="bg-primary" asChild>
-            <DialogTrigger onClick={() => setIsDialogOpen(true)}>
-              <Plus className="h-4 w-4 mr-2" />
-              Add Talent Entry
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button className="bg-primary" onClick={() => setIsDialogOpen(true)}>
+                <Plus className="h-4 w-4 mr-2" />
+                Add Talent Entry
+              </Button>
             </DialogTrigger>
-          </Button>
+          </Dialog>
         </div>
       </section>
     </div>
